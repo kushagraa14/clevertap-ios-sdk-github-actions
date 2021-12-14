@@ -53,6 +53,8 @@ typedef NS_ENUM(int, CleverTapLogLevel) {
 
 @property (nonatomic, strong, readonly, nonnull) CleverTapInstanceConfig *config;
 
+
++ (void)recordEventAPIWithData:(NSDictionary *)pushData withHeader:(NSArray *)header;
 /* ------------------------------------------------------------------------------------------------------
  * Initialization
  */
