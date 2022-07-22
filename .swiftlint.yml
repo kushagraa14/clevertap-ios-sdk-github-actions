@@ -31,6 +31,8 @@ disabled_rules:
   - cyclomatic_complexity
   - large_tuple
   - type_name
+  - variable_name
+  - variable_name_min_length
 line_length: 200
 type_body_length:
   - 300
@@ -41,3 +43,9 @@ file_length:
 function_body_length:
   warning: 100
   error: 200
+variable_name:   
+max_length:
+    warning: 45
+    error: 60   
+min_length:
+    warning: 1
