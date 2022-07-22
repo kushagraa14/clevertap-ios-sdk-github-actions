@@ -20,8 +20,6 @@ clean:
 	xcodebuild $(XCARGS) -scheme ObjCStarter clean | xcpretty && \
 	xcodebuild $(XCARGS) -scheme SwiftStarter clean | xcpretty
 
-test: build
-	set -o pipefail && xcodebuild $(XCARGS) -scheme CleverTapSDKTests test | xcpretty
 
 examples: install-examples build-objc-example build-swift-example
 
