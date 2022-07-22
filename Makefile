@@ -1,5 +1,5 @@
 WORKSPACE ?= CleverTapSDK.xcworkspace
-TEST_SDK ?= 14.4
+TEST_SDK ?= 15.2
 TEST_DEVICE ?= iPhone 11 Pro Max
 
 XCARGS := -workspace $(WORKSPACE) \
