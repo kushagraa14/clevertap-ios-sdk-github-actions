@@ -25,7 +25,7 @@ examples: install-examples build-objc-example build-swift-example
 
 install-examples: install build
 	pod install --project-directory=ObjCStarter/
-  pod install --project-directory=SwiftStarter/
+  	pod install --project-directory=SwiftStarter/
 
 build-objc-example: install-examples
 	set -o pipefail && xcodebuild $(XCARGS) -scheme ObjCStarter clean build | xcpretty
