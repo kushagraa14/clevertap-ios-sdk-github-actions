@@ -35,7 +35,6 @@ jobs:
           TEST_DEVICE: "${{ matrix.device }}"
         run: |
           make
-          make test
       - name: "Verify code linting generated no changes"
         run: git diff --exit-code
 
