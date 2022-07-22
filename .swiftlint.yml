@@ -31,6 +31,8 @@ disabled_rules:
   - cyclomatic_complexity
   - large_tuple
   - type_name
+  - variable_name
+  - variable_name_min_length
 line_length: 200
 type_body_length:
   - 300
