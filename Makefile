@@ -1,9 +1,9 @@
 WORKSPACE ?= CleverTapSDK.xcworkspace
-TEST_SDK ?= 14.4
+TEST_SDK ?= 15.5
 TEST_DEVICE ?= iPhone 11 Pro Max
 
 XCARGS := -workspace $(WORKSPACE) \
-					-sdk "iphonesimulator$(TEST_SDK)" \
+					-sdk "iphonesimulator" \
 					-destination "platform=iOS Simulator,OS=$(TEST_SDK),name=$(TEST_DEVICE)" \
 					GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
