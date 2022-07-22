@@ -5,9 +5,9 @@ on: [push]
 jobs:
   test:
     name: "Build and test CleverTap iOS SDK using [${{ matrix.os }}, xcode${{ matrix.xcode }}, sdk${{ matrix.sdk }}, ${{ matrix.device }}]"
-#     env:
-#       WORKSPACE: "VelocidiSDK.xcworkspace"
-#       SCHEME: "VelocidiSDK"
+    env:
+      WORKSPACE: "CleverTapSDK.xcworkspace"
+      SCHEME: "CleverTapSDK"
     strategy:
       matrix:
         include:
