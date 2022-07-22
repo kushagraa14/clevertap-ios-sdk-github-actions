@@ -24,7 +24,7 @@ clean:
 examples: install-examples build-objc-example build-swift-example
 
 install-examples: install build
-	pod install --project-directory=ObjCStarter/
+	pod install --project-directory=ObjCStarter/ && \
   	pod install --project-directory=SwiftStarter/
 
 build-objc-example: install-examples
